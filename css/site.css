@@ -73,17 +73,24 @@ footer ul.copyright a {
    max-width: 100%;
 }
 
-/* Foundation Over-rides */
+
+
+/* Foundation Over-rides 
 .row {
   max-width = 100%;
 }
-
+*/
 /* working section labels - remove */
 h6 {
   color:green;
 }
 
-#test {
-  background-color: blue;
-  
+div {
+  border-color: blue;
+  border-style:  solid; 
+}
+
+#main-site-feed .feed-box {
+  background-color: gray ; 
+  color: white ; 
 }
