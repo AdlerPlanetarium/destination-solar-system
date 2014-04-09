@@ -5,31 +5,26 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/site.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="js/app/instafeed.min.js"></script>
   </head>
   <body>
     <section >
-    <div class="row">
-      <div class="small-6 small-offset-1 columns">
-        <p>legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        <div class="row fullWidth">
+        <div class="small-10 small-offset-1 columns end">
+          <ul id="instafeed" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+          </ul>
+        </div>
       </div>
-      <div class="small-2 small-offset-2 end columns">
-        <a href="#" class="button [secondary  alert]">Buy Tickets</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class='small-1 columns'>1</div>
-      <div class='small-1 columns'>2</div>
-      <div class='small-1 columns'>3</div>
-      <div class='small-1 columns'>4</div>
-      <div class='small-1 columns'>5</div>
-      <div class='small-1 columns'>6</div>
-      <div class='small-1 columns'>7</div>
-      <div class='small-1 columns'>8</div>
-      <div class='small-1 columns'>9</div>
-      <div class='small-1 columns'>10</div>
-      <div class='small-1 columns'>11</div>
-      <div class='small-1 columns'>12</div>
-    </div>
-  </section>
+    </section>  
   </body>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        clientId: '4d92c60c642241a28c4c95c8d140ba41',
+        get: 'user',
+        userId: 343239464,
+        accessToken: "343239464.4d92c60.18e05c4160ed4cfcb7ab5a50ac0faa2c",
+        template: '<li><a class="instagram-image dork" href="{{link}}"><img src="http://{{image}}"/></a></li>'
+    });
+    feed.run();
+  </script>
 </html>
