@@ -20,10 +20,11 @@
   <script type="text/javascript">
     var feed = new Instafeed({
         clientId: '4d92c60c642241a28c4c95c8d140ba41',
-        get: 'user',
-        userId: 343239464,
-        accessToken: "343239464.4d92c60.18e05c4160ed4cfcb7ab5a50ac0faa2c",
-        template: '<li><a class="instagram-image dork" href="{{link}}"><img src="http://{{image}}"/></a></li>'
+        get: 'tagged',
+        tagged: 343239464,
+        tagName: 'spacecation',
+        limit: 8, 
+        template: '<li><a class="instagram-image" href="{{link}}"><img src="http://{{image}}"/></a></li>'
     });
     feed.run();
   </script>

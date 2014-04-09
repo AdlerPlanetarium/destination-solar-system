@@ -90,6 +90,12 @@ div {
   border-style:  solid; 
 }
 
+
+#buy-tickets {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+}
 #main-site-feed .feed-box {
   background-color: gray ; 
   color: white ; 

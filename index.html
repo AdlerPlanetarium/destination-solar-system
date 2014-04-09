@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/site.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="js/app/instafeed.min.js"></script>
   </head>
   <body>
     
@@ -72,7 +73,7 @@
     <section id="your-space-station">
       <div class="row fullWidth">
         <div class="small-8 small-offset-2 centered columns end">
-          <h2 class="text-center">Your Space station</h1>
+          <h2 class="text-center">Your #Spacecation</h1>
         </div>
       </div>
       <div class="row fullWidth">
@@ -89,40 +90,12 @@
         </div>  
       </div>
       <div class="row fullWidth">
-        <div class="small-10 small-offset-1 end">
-          <ul class= "small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
-            <li>
-              <img src="working/satelite.jpg">
-            </li>
+        <div class="small-10 small-offset-1 columns end">
+          <ul id="instafeed" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
           </ul>
         </div>
       </div>
     </section>
-
     <section id="buy-tickets">
       <div class="row fullWidth">
         <div class="small-6 small-offset-1 columns">
@@ -227,6 +200,17 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+      //pull back Instagram info
+      var feed = new Instafeed({
+        clientId: '4d92c60c642241a28c4c95c8d140ba41',
+        get: 'tagged',
+        tagged: 343239464,
+        tagName: 'spacecation',
+        limit: 8, 
+        template: '<li><a class="instagram-image" href="{{link}}"><img src="http://{{image}}"/></a></li>'
+      });
+      feed.run();
+    
     </script>
   </body>
 </html>
