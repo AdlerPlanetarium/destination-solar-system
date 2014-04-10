@@ -8,24 +8,36 @@
     <script type="text/javascript" src="js/app/instafeed.min.js"></script>
   </head>
   <body>
-    <section >
-        <div class="row fullWidth">
-        <div class="small-10 small-offset-1 columns end">
-          <ul id="instafeed" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-          </ul>
+     <section id="splash">  
+      <div class="fake"/>
+      <div id="visit-mars" class="row fullWidth">
+        <div class="small-1 small-offset-1 columns">
+          <h1>Vist Mars Image</h1>
+        </div>
+        <div id="call-to-action" class="small-4 small-offset-6 columns">
+          <h1>Destination Solar System</h1>
+          <p>t esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim </p>
+          <a href="#" class="button [secondary success alert]">Buy Tickets</a>
         </div>
       </div>
-    </section>  
-  </body>
-  <script type="text/javascript">
-    var feed = new Instafeed({
-        clientId: '4d92c60c642241a28c4c95c8d140ba41',
-        get: 'tagged',
-        tagged: 343239464,
-        tagName: 'spacecation',
-        limit: 8, 
-        template: '<li><a class="instagram-image" href="{{link}}"><img src="http://{{image}}"/></a></li>'
-    });
-    feed.run();
-  </script>
+      <div class="row fullWidth">
+        <div class="small-12 centered columns end">
+          <h1 class="text-center" >DESTINATION SOLAR SYSTEM</h1>
+        </div>
+      </div>
+      <div class="row fullWidth">
+        <div class="small-12  centered columns end">
+          <h1 class="text-center">----</h1>
+        </div>  
+      </div>
+      <div class="row fullWidth">
+        <div class="small-12  centered columns end">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim 
+          veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut a
+          commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
 </html>

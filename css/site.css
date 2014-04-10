@@ -6,9 +6,14 @@
 html {
   font-size: 16px;
 }
+
+ h1, h2, h3, h4, h5, h6, p, div {
+  color: black; 
+}
+
 body {
   background-color: white;
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  
   font-size: .75rem;
   color: black;
   overflow-x: hidden;
@@ -31,7 +36,21 @@ body {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
   */
+header {
+  background-color: black;
+  color: white;
+  height: 4em;
+}
+header a {
+  color:white;
+}
+header li {
+  color:gray;
+}
 
+footer {
+  background-color: black;
+}
 footer nav {
   padding: 2rem 0 4rem 0;
   font-size: 0.625rem;  /* 10px circa*/
@@ -44,7 +63,19 @@ footer nav h2 {
   /*color:white;*/
 }
 
+footer ul h2 {
+  color: white;
+}
+footer ul h2 {
+  color: white;
+}
 
+#foot {
+  background-color: black
+}
+footer ul li a {
+  color: white;
+}
 footer ul.copyright {
   height: 3rem;
   line-height:  3rem;
@@ -59,12 +90,7 @@ footer ul.copyright a {
 }*/
 
 
-#splash {
-  color:green;
-  background-image: url(../working/adler-dss-web-top-slice.png); 
-  background-repeat: no-repeat; 
-  height: 100%;
-}
+
 
 .fullWidth {
    width: 100%;
@@ -74,6 +100,14 @@ footer ul.copyright a {
 }
 
 
+.little_rule {
+  width: 5px;
+}
+
+#spacecation hr {
+  al==
+  color: white;
+}
 
 /* Foundation Over-rides 
 .row {
@@ -81,22 +115,107 @@ footer ul.copyright a {
 }
 */
 /* working section labels - remove */
+/*
 h6 {
   color:green;
 }
-
+/*
 div {
   border-color: blue;
   border-style:  solid; 
+} 
+section {
+  border-color: purple;
+  border-style:  solid;
+}*/
+
+
+
+/* sections */
+/* discover-the-show */
+#discover-the-show div {
+  /*;
+  border-color: red;
+  border-style:  solid;*/
+}
+
+#discover-the-show, #header {  
+  background-color: black;
+ /* background-repeat: no-repeat; 
+  background-size: cover;
+  background-position:left top;  */
+}
+
+#discover-the-show h1,
+#discover-the-showh h2, 
+#discover-the-showh h3, 
+#discover-the-showh1 p, #discover-the-showh1 div {
+  color: white; 
+}
+
+#visit-mars{
+  padding-top: 250px;
+ /* margin-top: 15.625rem; /* 250px / 16 */
+  padding-top: 15.625rem;
+  padding-top: 15.625rem;
+}
+#visit-mars h1 {
+  color: white;
+}
+
+#visit-mars p{
+  color: gray;
+}
+
+#show-title {
+  padding-top: 250px;
+}
+
+/* your-spacecation */
+#your-spacecation {
+  background-color: black;
+  color: white;
+}
+
+#your-spacecation h1, h2,h3 {
+  color:white;
 }
 
 
+/* main-site-feed */
+#main-site-feed  {
+  background-color: black ;
+}
+#main-site-feed .feed-box {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  background-color: gray ; 
+}
+
+#main-site-feed .feed-box h1{
+  padding: 1em;
+  color: white ; 
+}
+
+
+/* buy tickets */
 #buy-tickets {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+/*
+#foot .footColumn {
+ padding-left:0;
+ padding-right:0;
 }
-#main-site-feed .feed-box {
-  background-color: gray ; 
-  color: white ; 
+
+#bye {
+  padding-left 50px;
 }
+*/
+
+a.button.success {
+  background-color: #ff5a00;
+}
+
+/* CRUFT */
