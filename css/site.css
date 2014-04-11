@@ -195,66 +195,106 @@ a.button:hover {
 
 /* Sticky Navy Bar */
 .sub-nav {
-  width: 75;
-  background-color:purple;
+  overflow: inherit;
 }
 .sub-nav dd {
   margin-left: 0;
 }
-.sub-nav dd a {
-  padding:2rem;
+
+#sticky-nav {
+  margin-top: 4rem;
+  background-color: transparent;
+}
+#test_content .sub-nav dd a ,
+#sticky-nav .sub-nav dd a  {
+  color: white;
+  padding-left:2rem;
+  padding-right:2rem;
+  padding-top:  1rem;
+  padding-bottom:1rem;
 }
 
 a.discover, 
-.sub-nav dd.active a.discover  {
-  background-color: #ffc400;
-} 
-
+.sub-nav dd.active a.discover {
+   background-color: #ffc400;
+ } 
+ 
 a.explore, 
 .sub-nav dd.active a.explore {
-  background-color: #00b7c5;
-} 
-
+   background-color: #00b7c5;
+ } 
+ 
 a.spacecation, 
 .sub-nav dd.active  a.spacecation {
-  background-color: #8cd635;
-} 
-
+   background-color: #8cd635;
+ } 
+ 
 a.visit,  
 .sub-nav dd.active a.visit {
   background-color: #ff1b00;
-} 
+}
 
 a.press,  
-.sub-nav dd.active  a.press {
+.sub-nav dd.active a.press {
   background-color: #373737;
-} 
+}
+/*
+.arrow-box {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffc400;
+} */
+/*
+.arrow_box {
+  position: relative;
+  background: #ffc400;
+  border: 36px solid ffc400;
+}
+.arrow_box:after, .arrow_box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
 
+.arrow_box:after {
+  border-color: rgba(252, 64, 0, 0);
+  border-top-color: #ffc400;
+  border-width: 36px;
+  margin-left: -36px;
+}
+.arrow_box:before {
+  border-color: rgba(252, 64, 0, 0);
 
-
-/* debugg
-div {
-  border-color: purple;
-  border-style:  dotted; 
-} 
-section, footer, div {
-  border-color: purple;
-  border-style:  solid;
+  border-top-color: #ffc400;
+  border-width: 87px;
+  margin-left: -87px;
 }*/
 
-
 /* CRUFT */
-#test_content a {
-  margin-top: 200px;
-  margin-bottom: 200px;
+.black {
+  padding-top: 100px;
+  background-color: gray;
+}
+
+#test_content div {
+
 }
 #test_content * {
   color:black;
 }
+/*
 #test_content h3 {
   line-height:400px;
   background-color: gray;
-}
+}*/
+
 /*
 #header {
   position: fixed;
