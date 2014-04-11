@@ -8,36 +8,54 @@
     <script type="text/javascript" src="js/app/instafeed.min.js"></script>
   </head>
   <body>
-     <section id="splash">  
-      <div class="fake"/>
-      <div id="visit-mars" class="row fullWidth">
-        <div class="small-1 small-offset-1 columns">
-          <h1>Vist Mars Image</h1>
-        </div>
-        <div id="call-to-action" class="small-4 small-offset-6 columns">
-          <h1>Destination Solar System</h1>
-          <p>t esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim </p>
-          <a href="#" class="button [secondary success alert]">Buy Tickets</a>
-        </div>
+   
+    <div class="magellan-container" data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <dd data-magellan-arrival="discover-the-show">
+          <a class="discover" href="#discover-the-show">discover-the-show</a>
+        </dd>
+        <dd data-magellan-arrival="explore-the-stops">
+          <a class="explore" href="#explore-the-stops">explore-the-stops</a>
+        </dd>
+        <dd data-magellan-arrival="your-spacecation">
+          <a class="spacecation" href="#your-spacecation">your-spacecation</a>
+        </dd>
+        <dd data-magellan-arrival="visit-the-adler">
+          <a class="visit" href="#visit-the-adler">Visit the Adler</a>
+        </dd>
+        <dd data-magellan-arrival="press-and-images">
+          <a  class="press" href="#press-and-images">press-and-images</a>
+        </dd>
+      </dl>
+    </div> 
+
+    <div id="test_content">
+      <div class="black">
+        <a name="discover-the-show">a</a>
+        <h3 data-magellan-destination="discover-the-show">discover-the-show</h3>
       </div>
-      <div class="row fullWidth">
-        <div class="small-12 centered columns end">
-          <h1 class="text-center" >DESTINATION SOLAR SYSTEM</h1>
-        </div>
+      <div class="white">
+        <a name="explore-the-stops">b</a>
+        <h3 data-magellan-destination="explore-the-stops">explore-the-stops</h3>
       </div>
-      <div class="row fullWidth">
-        <div class="small-12  centered columns end">
-          <h1 class="text-center">----</h1>
-        </div>  
+      <div class="black">
+        <a name="your-spacecation">c</a>
+        <h3 data-magellan-destination="your-spacecation">your-spacecation</h3>
       </div>
-      <div class="row fullWidth">
-        <div class="small-12  centered columns end">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
-          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim 
-          veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut a
-          commodo consequat.
-          </p>
-        </div>
+      <div class="black">
+        <a name="visit-the-adler">c</a>
+        <h3 data-magellan-destination="visit-the-adler">visit-the-adler</h3>
       </div>
-    </section>
+      <div class="white">
+        <a name="press-and-images">d</a>
+        <h3 data-magellan-destination="press-and-images">press-and-images</h3>
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
+    <script>
+      $(document).foundation();
+
+    </script>
 </html>

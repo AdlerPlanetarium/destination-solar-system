@@ -153,17 +153,17 @@ footer ul.copyright li {
 }
 
 
-/* main-site-feed */
-#main-site-feed  {
+/* press-and-images */
+#press-and-images  {
   background-color: black ;
 }
-#main-site-feed .feed-box {
+#press-and-images .feed-box {
   margin-top: 250px;
   margin-bottom: 250px;
   background-color: gray ; 
 }
 
-#main-site-feed .feed-box h1{
+#press-and-images .feed-box h1{
   padding: 1em;
   color: white ; 
 }
@@ -191,9 +191,48 @@ a.button {
 
 a.button:hover {
   background-color: #ff1b00;
-}f
+}
 
-/* debugg*/
+/* Sticky Navy Bar */
+.sub-nav {
+  width: 75;
+  background-color:purple;
+}
+.sub-nav dd {
+  margin-left: 0;
+}
+.sub-nav dd a {
+  padding:2rem;
+}
+
+a.discover, 
+.sub-nav dd.active a.discover  {
+  background-color: #ffc400;
+} 
+
+a.explore, 
+.sub-nav dd.active a.explore {
+  background-color: #00b7c5;
+} 
+
+a.spacecation, 
+.sub-nav dd.active  a.spacecation {
+  background-color: #8cd635;
+} 
+
+a.visit,  
+.sub-nav dd.active a.visit {
+  background-color: #ff1b00;
+} 
+
+a.press,  
+.sub-nav dd.active  a.press {
+  background-color: #373737;
+} 
+
+
+
+/* debugg
 div {
   border-color: purple;
   border-style:  dotted; 
@@ -201,10 +240,21 @@ div {
 section, footer, div {
   border-color: purple;
   border-style:  solid;
-}
+}*/
 
 
 /* CRUFT */
+#test_content a {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+#test_content * {
+  color:black;
+}
+#test_content h3 {
+  line-height:400px;
+  background-color: gray;
+}
 /*
 #header {
   position: fixed;
