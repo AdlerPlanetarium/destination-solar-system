@@ -3,6 +3,22 @@
  0.625rem;  10px circa
  0.75rem;  12px circa 
 */
+
+/* general */
+
+/* Foundation Over-rides 
+.row {
+  max-width = 100%;
+}
+*/
+/* working section labels - remove */
+/*
+h6 {
+  color:green;
+}
+
+
+/* elements */
 html {
   font-size: 16px;
 }
@@ -12,30 +28,21 @@ html {
 }
 
 body {
-  background-color: white;
-  
+  background-color: white;  
   font-size: .75rem;
   color: black;
-  overflow-x: hidden;
-  
+  overflow-x: hidden; 
 }
-/*
-#header {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 51px;
-  background-color: #101010;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);0.625
 
-  background-color: #101010;
-  color: #c2c2c2;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%;
 }
-  */
+
+/* site header */
 header {
   background-color: black;
   color: white;
@@ -70,65 +77,26 @@ footer ul h2 {
   color: white;
 }
 
-#foot {
-  background-color: black
-}
 footer ul li a {
   color: white;
 }
 footer ul.copyright {
+  color:white;
   height: 3rem;
   line-height:  3rem;
-  font-size: 0.625rem;  
+  font-size: 0.625rem; 
+  list-style-type: none; 
   text-align: center;
 }
-/*
-footer ul.copyright a {
-  background-color: blue;  
-  color:red;
-  padding: 20px;   
-}*/
 
-
-
-
-.fullWidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 100%;
+footer ul.copyright li {
+  padding-right:  1rem;
+  display: inline-block;
 }
-
-
+/* motifs */
 .little_rule {
   width: 5px;
 }
-
-#spacecation hr {
-  al==
-  color: white;
-}
-
-/* Foundation Over-rides 
-.row {
-  max-width = 100%;
-}
-*/
-/* working section labels - remove */
-/*
-h6 {
-  color:green;
-}
-/*
-div {
-  border-color: blue;
-  border-style:  solid; 
-} 
-section {
-  border-color: purple;
-  border-style:  solid;
-}*/
-
 
 
 /* sections */
@@ -147,9 +115,9 @@ section {
 }
 
 #discover-the-show h1,
-#discover-the-showh h2, 
-#discover-the-showh h3, 
-#discover-the-showh1 p, #discover-the-showh1 div {
+#discover-the-show h2, 
+#discover-the-show h3, 
+#discover-the-show p, #discover-the-show div {
   color: white; 
 }
 
@@ -177,7 +145,10 @@ section {
   color: white;
 }
 
-#your-spacecation h1, h2,h3 {
+#your-spacecation h1, 
+#your-spacecation h2,
+#your-spacecation h3, 
+#your-spacecation p {
   color:white;
 }
 
@@ -214,8 +185,40 @@ section {
 }
 */
 
-a.button.success {
-  background-color: #ff5a00;
+a.button {
+  background-color: #ff1b00;
 }
 
+a.button:hover {
+  background-color: #ff1b00;
+}f
+
+/* debugg*/
+div {
+  border-color: purple;
+  border-style:  dotted; 
+} 
+section, footer, div {
+  border-color: purple;
+  border-style:  solid;
+}
+
+
 /* CRUFT */
+/*
+#header {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 51px;
+  background-color: #101010;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);0.625
+
+  background-color: #101010;
+  color: #c2c2c2;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+  */
