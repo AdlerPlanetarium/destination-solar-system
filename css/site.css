@@ -312,3 +312,46 @@ a.press,
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
   */
+/* debuggign 
+#sticky-nav{
+  border-color: blue;
+  border-style: dotted;
+}
+.magellan-container{
+  margin-left:0;
+  padding-left:0;
+  background-color: inherit;
+  border-color: gray;
+  border-style: dotted;
+}
+div {
+  border-color: purple;
+  border-style:  solid
+}
+dl {
+  border-color: red;
+  border-style:  solid
+}
+
+dd {
+  border-color: green;
+  border-style:  solid
+}
+
+dd a {
+ 
+  border-color: green;
+  border-style:  dotted
+}
+
+header {
+  background-color: black;
+  border-color: green;
+  border-style:  dotted;
+}
+
+body {
+
+}
+*/
+
