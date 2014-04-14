@@ -27,6 +27,20 @@ body {
   overflow-x: hidden; 
 }
 
+hr {
+  padding:0px;
+  margin:auto;
+  height:.25rem;
+  width: 3rem;
+}
+hr.white {
+  background-color: white;
+}
+
+hr.black {
+  background-color: black;
+}
+
 /****************/
 /* site header */
 header {
@@ -276,7 +290,8 @@ dd.discover,
 }
 */
 /******************/
-/* debugging 
+/* debugging */
+/*
 #sticky-nav{
   border-color: blue;
   border-style: dotted;
