@@ -1,0 +1,11 @@
+.itinerary {
+  padding: 3rem;
+  width: 100%;
+  height:100%;
+  background-color: black ;
+  color: white;
+}
+
+.itinerary h1, h2, p {
+   color: white;
+}
