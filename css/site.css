@@ -12,17 +12,12 @@
    max-width: 100%;
 }
 
-html {
-  font-size: 16px;
-}
-
  h1, h2, h3, h4, h5, h6, p, div {
   color: black; 
 }
 
 body {
-  background-color: white;  
-  font-size: .75rem;
+  background-color: black; 
   color: black;
   overflow-x: hidden; 
 }
@@ -44,7 +39,7 @@ hr.black {
 /****************/
 /* site header */
 header {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   height: 4em;
 }
@@ -53,6 +48,56 @@ header a {
 }
 header li {
   color:gray;
+}
+
+#logo {
+  margin :0;
+  float:left;
+}
+
+#logo a {
+  margin-top: 6px;
+  padding: 12px;
+  float:left;
+}
+
+header ul.hours  {
+  line-height: 1.3125rem;
+}
+
+header #right-top a {
+  color: white;
+}
+
+header #right-top div {
+  color: gray;
+}
+
+
+header #right-top a,header #right-top span
+{
+  font-weight: 700;
+  font-size: 0.5625rem;
+  padding: 0;
+  text-transform: uppercase;
+  /*
+  font-weight: 700;
+  
+  font-size: 0.5625rem;
+  */
+  
+}
+
+header ul.hours li {
+  height: 1.3125rem;
+  line-height: 1.3125rem;
+  margin: 1rem 0 0 0; 
+  padding:0 0.75rem;
+  border-right: 1px solid gray;
+}
+
+header ul.hours .shop {
+  border-right-style: none;
 }
 
 
@@ -289,43 +334,11 @@ dd.discover,
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 */
-/******************/
-/* debugging */
-/*
-#sticky-nav{
-  border-color: blue;
-  border-style: dotted;
-}
- .maggelan-container {}
-  border-color: gray;
-  border-style: dotted;
-}
-div {
-  border-color: purple;
-  border-style:  solid
-}
-dl {
-  border-color: red;
-  border-style:  solid
-}
 
-dd {
-  border-color: green;
-  border-style:  solid
-}
 
-dd a {
- 
-  border-color: green;
-  border-style:  dotted
-}
 
-header {
-  
-  border-color: green;
-  border-style:  dotted;
-}
-*/
+
+
 
 
 
