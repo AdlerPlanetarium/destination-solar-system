@@ -16,9 +16,9 @@ puts use_bucket
 css = Dir.glob("css/*.css")
 js    = Dir.glob("js/**/*.*")
 img = Dir.glob("img/**/*.*")
-resources = Dir.glob("resources/**/*.*")
+tour = Dir.glob("tour/**/*.*")
 
-to_upload = ["index.html"] + css + js + img
+to_upload = ["index.html"] + css + js + img + tour
 
 total = to_upload.count
 
