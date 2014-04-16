@@ -9,26 +9,19 @@ div {
   border-style:solid;
   border-color:blue;
 }
-
 section, header, footer {
   border-style:solid;
   border-color:purple;
 }
-
-dd {
-  border-style:solid;
-  border-color:orange;
-
-} 
-
 a {
   border-style:solid;
   border-color:red;
 }
-
+dd {
+  border-style:solid; border-color:orange;
+}
 span {
-  border-style:solid;
-  border-color:yellow;
+  border-style:solid; border-color:yellow;
 } */
 
 #tour-links .columns {
@@ -117,12 +110,6 @@ header #right-top a,header #right-top span
   font-size: 0.5625rem;
   padding: 0;
   text-transform: uppercase;
-  /*
-  font-weight: 700;
-  
-  font-size: 0.5625rem;
-  */
-  
 }
 
 header ul.hours li {
@@ -181,6 +168,8 @@ footer ul.copyright li {
 
 /* button colors */
 a.button {
+  width: 11.25rem;
+  height:3.25rem;
   background-color: #ff1b00;
 }
 
