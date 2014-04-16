@@ -3,17 +3,37 @@
  0.625rem;  10px circa
  0.75rem;  12px circa 
 */
+
 /*
 div {
   border-style:solid;
   border-color:blue;
 }
 
-section {
-  border-style:purple;
-  border-color:blue;
-}*/
+section, header, footer {
+  border-style:solid;
+  border-color:purple;
+}
 
+dd {
+  border-style:solid;
+  border-color:orange;
+
+} 
+
+a {
+  border-style:solid;
+  border-color:red;
+}
+
+span {
+  border-style:solid;
+  border-color:yellow;
+} */
+
+#tour-links .columns {
+  text-align:center;
+}
 
 /* general */
 .fullWidth {
@@ -36,6 +56,7 @@ body {
 hr {
   padding:0px;
   margin:auto;
+  margin-bottom: 1.9rem;
   height:.25rem;
   width: 3rem;
 }
@@ -64,12 +85,12 @@ header li {
 
 #logo {
   margin :0;
-  float:left;
 }
 
 #logo a {
-  margin-top: 6px;
-  padding: 12px;
+  margin-top: 0px;
+  padding: .75rem;
+  padding-top:0;
   float:left;
 }
 
@@ -182,8 +203,6 @@ a.button:hover {
 }
 
 #visit-mars{
-  padding-top: 250px;
-  padding-top: 15.625rem;
   padding-top: 15.625rem;
 }
 
@@ -194,11 +213,34 @@ a.button:hover {
 #visit-mars p{
   color: gray;
 }
-
+/*
 #show-title {
-  padding-top: 250px;
+  padding-top: 3.5rem; /* 136px-80pxh1 top marg = 56, 56/1600
+}*/
+
+#instafeed li{
+  text-align:center;
+  vertical-align: center;
 }
 
+.instagram-image {
+  vertical-align: center;
+  /*width:225px;*/
+}
+
+a.watch-trailer {
+  border-radius:4px;
+  border: 2px solid white;
+  background-color: black;
+  color:white;
+  font-weight: 900;
+  font-size:1rem;
+  padding:0;
+  line-height:60px;
+  height:60px;
+  width:220px;
+  position: none;
+}
 /* explore */
 .planet-link  {
   width:100%;
@@ -210,7 +252,8 @@ a.button:hover {
   font-weight: bolder;
 }
 .planet-link img {
- 
+  margin-left: -2rem;
+  max-width: none;
 }
 #tour-links {
   margin-bottom: 3rem;
@@ -228,7 +271,14 @@ a.button:hover {
   color:white;
 }
 
-#your-spacecation h1 {
+p {
+  text-align:center;
+  font-weight:200;
+  font-size:1.125rem;
+  line-height: 1.625rem;
+}
+
+h1 {
   font-size: 26px;
   font-family: Lato;
   font-weight: 700;
@@ -236,6 +286,13 @@ a.button:hover {
   text-transform: uppercase;
   margin-bottom: 25px;
   margin-top: 80px;
+}
+
+.sphere-caption {
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align:center;
+  text-transform:uppercase;
 }
 
 /* press-and-images */
@@ -274,7 +331,12 @@ a.button:hover {
   padding-right:0;
 }
 .sub-nav dd {
+  padding:0;
+  line-height:4rem;
+  text-align:center;
+  height:4rem;
   margin-left: 0;
+  width:20%;
 }
 
 #sticky-nav {
@@ -284,16 +346,19 @@ a.button:hover {
 
 #sticky-nav .sub-nav dd a:active,
 #sticky-nav .sub-nav dd a  {
-  width:inherit;
+  width:100%;
   height:inherit;
   color: white;
+  line-height:4rem;
+  text-align:center;
+  padding:0;
+  font-size:1.0625;
+  font-weight:700;
   background-color: inherit;
 }
 
 #sticky-nav .sub-nav dd {
-  padding-top:  1rem;
-  padding-bottom:1 rem;
-  width:20%;
+ 
 }
 
 dd.discover, 
@@ -327,7 +392,7 @@ dd.discover,
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #ffc400;
+  border-top: 20px solid red;
 } */
 /*
 .arrow_box {
@@ -358,27 +423,9 @@ dd.discover,
   border-top-color: #ffc400;
   border-width: 87px;
   margin-left: -87px;
-}*/
-
-/* CRUFT */
-/*
-#header {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 51px;
-  background-color: #101010;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);0.625
-
-  background-color: #101010;
-  color: #c2c2c2;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
-*/
 
+red
 
 
 
