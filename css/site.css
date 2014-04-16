@@ -229,13 +229,13 @@ a.button:hover {
 }
 
 #your-spacecation h1 {
-font-size: 26px;
-font-family: Lato;
-font-weight: 700;
-letter-spacing: 3px;
-text-transform: uppercase;
-margin-bottom: 25px;
-margin-top: 80px;
+  font-size: 26px;
+  font-family: Lato;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 80px;
 }
 
 /* press-and-images */
@@ -282,10 +282,12 @@ margin-top: 80px;
   background-color: transparent;
 }
 
+#sticky-nav .sub-nav dd a:active,
 #sticky-nav .sub-nav dd a  {
   width:inherit;
   height:inherit;
   color: white;
+  background-color: inherit;
 }
 
 #sticky-nav .sub-nav dd {
