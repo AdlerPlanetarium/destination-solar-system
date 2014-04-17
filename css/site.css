@@ -170,10 +170,12 @@ footer ul.copyright li {
 a.button {
   width: 11.25rem;
   height:3.25rem;
-  background-color: #ff1b00;
+  padding-top: 1rem;
+  padding-bottom:1rem;
+  line-height:1.25rem;
 }
 
-a.button:hover {
+a.button.buy{
   background-color: #ff1b00;
 }
 
@@ -217,7 +219,7 @@ a.button:hover {
   /*width:225px;*/
 }
 
-a.watch-trailer {
+a.button.watch-trailer {
   padding:0;
   margin-left:auto;
   margin-right:auto;
@@ -234,6 +236,11 @@ a.watch-trailer {
   height:3.75rem;
   width:13.75rem; /*220px */
   position: none;
+}
+
+a.button.watch-trailer:hover
+ {
+  background-color: #ff1b00;
 }
 /* explore */
 .planet-link  {
