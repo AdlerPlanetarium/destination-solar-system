@@ -8,15 +8,24 @@
 div {
   border-style:solid;
   border-color:blue;
+  border-width:1px;
 }
+a {
+  border-width:1px;
+  border-style:solid;
+  border-color:red;
+}
+img {
+  border-width:1px;
+  border-style:solid;
+  border-color:black; 
+}
+/*
 section, header, footer {
   border-style:solid;
   border-color:purple;
 }
-a {
-  border-style:solid;
-  border-color:red;
-}
+
 dd {
   border-style:solid; border-color:orange;
 }
@@ -179,9 +188,9 @@ a.button.buy{
   background-color: #ff1b00;
 }
 
-/*********************/
+/***************************/
 /* sections */
-
+/* discover*/
 #discover-the-show, #header {  
   background-color: black;
 }
@@ -209,15 +218,7 @@ a.button.buy{
   padding-top: 3.5rem; /* 136px-80pxh1 top marg = 56, 56/1600
 }*/
 
-#instafeed li{
-  text-align:center;
-  vertical-align: center;
-}
 
-.instagram-image {
-  vertical-align: center;
-  /*width:225px;*/
-}
 
 a.button.watch-trailer {
   padding:0;
@@ -242,23 +243,48 @@ a.button.watch-trailer:hover
  {
   background-color: #ff1b00;
 }
+
+/***************************/
 /* explore */
-.planet-link  {
-  width:100%;
-  height:100%;
-  color:black;
-} 
-.planet-link span{
-  font-size: 1rem;
-  font-weight: bolder;
+
+.planet-image-link {
+  max-width:6.25rem;
+  margin-left:auto;
+  margin-right:auto;
 }
-.planet-link img {
-  margin-left: -2rem;
+.planet-image-link img {
+  margin-left:auto;
+  margin-right:auto;
   max-width: none;
 }
 #tour-links {
   margin-bottom: 3rem;
 }
+
+.planet-link {
+  margin-left: auto;
+  margin-right: auto;
+  color:black;
+  margin:auto;
+  max-width: 100px;
+  width: 222px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+.planet-link:visited {
+  color:black;
+}
+.tour-caption {
+  margin-top: .5rem;
+}
+.tour-caption,.tour-image {
+  margin:0;
+  padding:0;
+}
+
 /* your-spacecation */
 #your-spacecation {
   background-color: black;
@@ -271,6 +297,17 @@ a.button.watch-trailer:hover
 #your-spacecation p {
   color:white;
 }
+
+#instafeed li{
+  text-align:center;
+  vertical-align: center;
+}
+
+.instagram-image {
+  vertical-align: center;
+  /*width:225px;*/
+}
+
 
 p {
   text-align:justify;
@@ -289,12 +326,6 @@ h1 {
   margin-top: 80px;
 }
 
-.sphere-caption {
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-align:center;
-  text-transform:uppercase;
-}
 
 /* press-and-images */
 #press-and-images  {
