@@ -10,7 +10,6 @@
     <script src="js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="js/app/instafeed.min.js"></script>
     <script type="text/javascript" src="js/app/main.js"></script>
-    <!--<script type="text/javascript" src="js/app/scroll.js"></script>-->
   </head>
   <body>
     <header>
@@ -41,6 +40,7 @@
             </ul>
          </div>
         </div>
+        <div id="nav-target" class="small-5 small-offset-6 columns end" /> 
       </div>
     </header>
 
@@ -48,20 +48,20 @@
       
       <div id="visit-mars" class="row fullWidth">
         <div class="small-1 small-offset-1 columns">
-          <h2>Immerse yourself</h2>
+          <h2>Explore the Solar System</h2>
         </div>
         <div id="call-to-action" class="small-4 small-offset-6 columns">
           <a name="discover-the-show"></a>
           <h1 data-magellan-destination="discover-the-show" >Destination Solar System</h1>
-          <p class="text-left">Explore the best of the Solar System in one unforgettable 30 minute tour. Discover the distant moons of Jupiter, take in the sights of the asteroid belt, awaken your senses with a cruise through Saturn’s icy rings. Space Express Tours are a great way to explore new places or see a new side of a familiar destination.
+          <p class="text-left">Jump aboard the most popular tour Space Express offers, Destination Solar System. Tours launch daily from the Grainger Sky Theater Gate A3. Your journey awaits.
           </p>
           <a href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=PP" class="button radius buy">Purchase Tickets</a>
         </div>
       </div>
-    
+      <div id="site-header" />
       <div id="sticky-nav" class="row fullWidth">
         <div id="nav-column" class="small-10 small-offset-1 columns end">
-        <div class="site-navigation">
+        <div id="site-navigation">
           <div class="navLinks">
             <a class="discover scroll" href="#discover-the-show">Discover the Show</a>
             <a class="explore scroll"  href="#explore-the-stops">Explore the Stops</a>
@@ -169,7 +169,7 @@
       <div class="row fullWidth">
         <div class="small-8 small-offset-2 centered columns end">
           <a name="your-spacecation"></a>
-          <h1 data-magellan-destination="your-spacecation" class="text-center">Your #Spacecation</h1>
+          <h1 class="text-center">Your #Spacecation</h1>
         </div>
       </div>
       <div class="row fullWidth">
@@ -306,69 +306,17 @@
           </ul>
         </div>
       </div>
-    </footer>
+      </footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/app/scroll.js"></script>
     <!--<script src="js/foundation/foundation.magellan.js"></script>-->
     <script>
       $(document).foundation();
       //pull back Instagram info
       populateInstagram();
+      startScroller();
 
-
-scroll_to = function(event) {
-  var target;
-  event.preventDefault();
-  target = $(event.target).attr('href');
-  return $('html, body').animate({
-    scrollTop: $(target).offset().top
-  }, 600);
-}; 
-
-currentSection = function() {
-  var section;
-  section = null;
-  /*$('body > .site-section').each(function() {*/
-  $('section').each(function() { 
-    if ($(this).position().top + $(this).height() > $('body').scrollTop()) {
-      section = $(this)[0].id;
-      return false;
-    }
-    return true;
-  });
-  return section;
-}; 
-
-updateNavigation = function() {
-  var headerElement, navElement, num, section;
-  navElement = $('body > .site-navigation');
-  headerElement = $('body > .site-header');
-  if ($('body').scrollTop() < headerElement.innerHeight()) {
-    navElement.removeClass('fixed');
-    return $('body').css('margin-top', '0');
-  } else {
-    navElement.addClass('fixed');
-    $('body').css('margin-top', '50px');
-    section = currentSection();
-    num = navElement.find("a[href=#" + section + "]").index();
-    if (num >= 0) {
-      navElement.find('a').removeClass('active');
-      navElement.find("a[href=#" + section + "]").addClass('active');
-      navElement.removeClass('pos1 pos2 pos3 pos4 pos5');
-      return navElement.addClass("pos" + (num + 1));
-    }
-  }
-};
-
-
-$(function() {
-  $(window).scroll(updateNavigation);
-  $('.scroll').click(scrollTo);
-  updateNavigation();
-  /*return document.querySelector('.overlay').addEventListener('click', function(e) {
-    return this.style.display = 'none'; 
-  });*/
-});
       
 
     </script>
