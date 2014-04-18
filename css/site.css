@@ -3,8 +3,7 @@
  0.625rem;  10px circa
  0.75rem;  12px circa 
 */
-
-/*
+/**/
 div {
   border-style:solid;
   border-color:blue;
@@ -20,18 +19,17 @@ img {
   border-style:solid;
   border-color:black; 
 }
-/*
+
 section, header, footer {
   border-style:solid;
   border-color:purple;
 }
-
 dd {
   border-style:solid; border-color:orange;
 }
 span {
   border-style:solid; border-color:yellow;
-} */
+} 
 
 #tour-links .columns {
   text-align:center;
@@ -218,8 +216,6 @@ a.button.buy{
   padding-top: 3.5rem; /* 136px-80pxh1 top marg = 56, 56/1600
 }*/
 
-
-
 a.button.watch-trailer {
   padding:0;
   margin-left:auto;
@@ -351,70 +347,61 @@ h1 {
 
 /********************/
 /* Sticky Navy Bar */
-.magellan-container{
-  background-color: inherit;
+#nav-target {
+  display:none;
 }
+/* behavior */
+.fixed {
+  position: fixed !important;
+  margin-left: 20.3125rem; 
+  margin-right:auto;
+  top:0;
+} /* 325px left gutter on 1200 max width */
+#sticky-nav {
+  margin-top: 4rem;
+  /*background-color: transparent; */
+}
+/* style */
+/*TODO name change*/
 .navLinks {
   /*margin-left:0;*/
-  overflow: inherit;
+  /*overflow: inherit;*/
 }
 #nav-column {
   padding-left:0;
   padding-right:0;
 }
-.navLinks dd {
+.navLinks a {
+  display:inline-block;
+  padding:0;
+  color:white;
   padding:0;
   line-height:4rem;
   text-align:center;
   height:4rem;
   margin-left: 0;
-  width:20%;
-}
-
-#sticky-nav {
-  margin-top: 4rem;
-  background-color: transparent;
-}
-
-#sticky-nav .navLinks a:active,
-#sticky-nav .navLinks  a  {
-  width:100%;
-  height:inherit;
-  color: white;
-  line-height:4rem;
-  text-align:center;
-  padding:0;
+  width:12.25rem;
   font-size:1.0625;
   font-weight:700;
-  background-color: inherit;
 }
-
-#sticky-nav .navLinks dd {
- 
-}
-
 a.discover, 
-.navLinks a.active.discover {
-   background-color: #ffc400;
- } 
- 
+.navLinks a.discover.active {
+  background-color: #ffc400;
+} 
 .navLinks a.explore, 
-.navLinks a.active.explore{
-   background-color: #00b7c5;
- } 
- 
+.navLinks a.explore.active {
+  background-color: #00b7c5;
+} 
 .navLinks a.spacecation, 
-.navLinks a.active.spacecation {
-   background-color: #8cd635;
- } 
- 
+.navLinks a.spacecation.active {
+  background-color: #8cd635;
+} 
 .navLinks a.visit,  
 .navLinks a.visit.active {
   background-color: #ff1b00;
 }
-
 .navLinks a.press,  
-.navLinks a.active.press {
+.navLinks a.press.active {
   background-color: #373737;
 }
 
@@ -457,8 +444,7 @@ a.discover,
   margin-left: -87px;
 }
 
-red
-*/
+/*
 body > .site-navigation:after,
 body > .site-navigation:before {
   top: 100%;
@@ -513,10 +499,7 @@ body > .site-navigation a:last-child {
   border-right: none;
 }
 
+*/
 
-.fixed {
-  position: fixed !important;
-  top: 0;
-}
 
 
