@@ -32,7 +32,9 @@ Scroller.prototype.updateNavigation = function() {
   console.log("updateNavigation");
   var headerElement, navElement, num, section;
   navElement = $('#site-navigation');
-  headerElement = $('#site-header');
+  headerElement = $('#discover-the-show');
+  //headerElement = $('#site-header');
+ 
   
   scrollTop = $(window).scrollTop();
   if (scrollTop < headerElement.innerHeight()) {
