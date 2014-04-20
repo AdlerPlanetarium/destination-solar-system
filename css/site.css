@@ -53,6 +53,10 @@ body {
   overflow-x: hidden; 
 }
 
+body, section {
+  /*max-width:1200px;*/
+}
+
 hr {
   padding:0px;
   margin:auto;
@@ -353,10 +357,23 @@ h1 {
 /* behavior */
 .fixed {
   position: fixed !important;
-  margin-left: 20.3125rem; 
+  margin-left:auto; 
   margin-right:auto;
+  text-align:center;
   top:0;
+  /* 6%;*/
 } /* 325px left gutter on 1200 max width */
+#site-navigation{
+  width:100%;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align:center;
+}
+.navLinks {
+  margin:0 auto;
+}
+
+
 #sticky-nav {
   margin-top: 4rem;
   /*background-color: transparent; */
@@ -380,7 +397,7 @@ h1 {
   text-align:center;
   height:4rem;
   margin-left: 0;
-  width:12.25rem;
+  width:12rem;
   font-size:1.0625;
   font-weight:700;
 }
