@@ -12,7 +12,7 @@ Scroller.prototype.scrollTo = function(event) {
   }, 600);
 }; 
 
-Scroller.prototype.currentSection = function() {
+currentSection = function() {
   console.log("currentSection");
   var section;
   section = null;
@@ -53,7 +53,7 @@ Scroller.prototype.updateNavigation = function() {
     });*/
 
     $('body').css('margin-top', '3.125rem');
-    section = this.currentSection();
+    section = currentSection();
     console.log("section is" + section);
     
     num = navElement.find("a[href=#" + section + "]").index();
@@ -62,10 +62,33 @@ Scroller.prototype.updateNavigation = function() {
     
     if (num >= 0) {
       console.log("removed an active");
+      // remove any other active
       navElement.find('a').removeClass('active');
-      navElement.find("a[href=" + section + "]").addClass('active');
+      sectionAnchor  = navElement.find("a[href=#" + section + "]");
+      sectionAnchor.addClass('active');
+      bgColor = sectionAnchor.css("background-color");
+      // color the bottom arrow
+     /*
+      $("#site-navigation").after().css({
+        "border-top-color": bgColor,
+         "border-width":  ".5rem",
+         "left": "50%",
+         "margin-left": "-.5rem"
+        }
+      );
+       $("#site-navigation").before().css({
+        "border-top-color": bgColor,
+         "border-width":  "0.875rem",
+         "left": "50%",
+         "margin-left": "-0.875rem"
+        } 
+      );
+      */
+   
+      //debugger
       navElement.removeClass('pos1 pos2 pos3 pos4 pos5');
       return navElement.addClass("pos" + (num + 1));
+      
     }
   }
 };
