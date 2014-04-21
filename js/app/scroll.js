@@ -44,7 +44,7 @@ Scroller.prototype.updateNavigation = function() {
     console.log(num);
     
     if (num >= 0) {
-      console.log("removed an active");
+      
       // remove any other active
       navElement.find('a').removeClass('active');
       sectionAnchor  = navElement.find("a[href=#" + section + "]");
