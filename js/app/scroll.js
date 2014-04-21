@@ -5,7 +5,6 @@ function Scroller (windoWidth) {
 Scroller.prototype.scrollTo = function(event) {
   var target;
   event.preventDefault();
-  console.log (event.target);
   target = $(event.target).attr('href');
   return $('html, body').animate({
     scrollTop: $(target).offset().top
@@ -13,13 +12,9 @@ Scroller.prototype.scrollTo = function(event) {
 }; 
 
 currentSection = function() {
-  console.log("currentSection");
-  var section;
   section = null;
-  /*$('body > .site-section').each(function() {*/
   $('section').each(function() { 
-    //console.log($.id);
-    if ($(this).position().top + $(this).height() > $('body').scrollTop()) {
+    if ($(this).position().top + $(this).height() > $(window).scrollTop()) {
       section = $(this)[0].id;
       return false;
     }
@@ -29,29 +24,17 @@ currentSection = function() {
 }; 
 
 Scroller.prototype.updateNavigation = function() {
-  console.log("updateNavigation");
   var headerElement, navElement, num, section;
   navElement = $('#site-navigation');
   headerElement = $('#discover-the-show');
-  //headerElement = $('#site-header');
- 
   
   scrollTop = $(window).scrollTop();
   if (scrollTop < headerElement.innerHeight()) {
-    console.log("in the header" + " " +  scrollTop );
     navElement.removeClass('fixed');
     return $('body').css('margin-top', '0');
   } else {
     navElement.addClass("fixed");
-    //fix position of the navigation at the top variable screen size
-    //and respond to variable screen size
-    /*leftOffset = navElement.parent().offset().left;
-    navElement.css({
-      position: 'fixed',
-      top: 0,
-      left: leftOffset
-    });*/
-
+    
     $('body').css('margin-top', '3.125rem');
     section = currentSection();
     console.log("section is" + section);
@@ -65,30 +48,11 @@ Scroller.prototype.updateNavigation = function() {
       // remove any other active
       navElement.find('a').removeClass('active');
       sectionAnchor  = navElement.find("a[href=#" + section + "]");
+      // make this active
       sectionAnchor.addClass('active');
-      bgColor = sectionAnchor.css("background-color");
-      // color the bottom arrow
-     /*
-      $("#site-navigation").after().css({
-        "border-top-color": bgColor,
-         "border-width":  ".5rem",
-         "left": "50%",
-         "margin-left": "-.5rem"
-        }
-      );
-       $("#site-navigation").before().css({
-        "border-top-color": bgColor,
-         "border-width":  "0.875rem",
-         "left": "50%",
-         "margin-left": "-0.875rem"
-        } 
-      );
-      */
-   
-      //debugger
+      // reassign the position -- used for CSS arrow affect
       navElement.removeClass('pos1 pos2 pos3 pos4 pos5');
       return navElement.addClass("pos" + (num + 1));
-      
     }
   }
 };
