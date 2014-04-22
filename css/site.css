@@ -192,36 +192,20 @@ a.button.buy{
   color: white; 
 }
 
+
 #visit-mars{
   background-image: url(../img/dss-web-hero.jpg);
   padding-top: 15.625rem;
   vertical-align: center;
+  
 }
 
 #call-to-action h1 {
   margin-top: 0;
 } 
 #call-to-action  {
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
 } 
-
-
-/*
-#show-title {
-  padding-top: 3.5rem; /* 136px-80pxh1 top marg = 56, 56/1600
-}*/
-/**/
-div {
-  border: solid purple;
-}
-
-section {
-  border: solid yellow;
-}
-
-#trailer {
-   border: solid green;
-}
 
 #trailer {
   width:100%;
@@ -239,6 +223,17 @@ section {
   margin-left:auto;
   margin-right:auto;  
 }
+
+#call-to-action h1 {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+#call-to-action p {
+  color:gray;
+}
+
 
 #press-and-images a.button.press-and-images-link,
 a.button.watch-trailer {
