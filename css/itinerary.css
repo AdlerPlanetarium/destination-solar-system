@@ -1,7 +1,9 @@
+body {
+  margin-left: 6.25rem;
+  margin-right: 6.50rem;
+  margin-top:3rem;
+}
 .itinerary {
-  padding: 3rem;
-  width: 100%;
-  height:100%;
   background-color: white ;
   font-family: Lato;
 }
@@ -10,6 +12,7 @@
   max-width: none;
 }
 .itinerary h1 {
+   font-size:2rem;
    color: black;
 }
 
@@ -27,13 +30,13 @@
   color:#d53b27;
 }
 #sun-tone h2{
-  color:#ffdd00
+  color:#FFCD05;
 }
 
 .itinerary a.button.itinerary-download {
   color:white;
   text-align:center;
-  width: 11.25rem;
+  width: 12.5rem;
   height:3.25rem;
   padding-top: 1rem;
   padding-bottom:1rem;
@@ -42,7 +45,7 @@
 .headline img {
   margin-top:-2rem;
 }
-.intinerary-byline {
+.itinerary-byline {
   vertical-align: middle;
   font-weight:900;
   font-size:1.5rem;
@@ -56,13 +59,13 @@
   background-color: #04b3c2;
 }
 #moon-tone  a.button.itinerary-download {
-   background-color::#a09f9f;
+   background-color:#a09f9f;
 }
 #mars-tone a.button.itinerary-download {
-  background-color::#d53b27;
+  background-color:#d53b27;
 }
 #sun-tone a.button.itinerary-download  {
-  background-color::#ffdd00
+  background-color:#FFCD05;
 }
 
 
