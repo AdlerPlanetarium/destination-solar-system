@@ -167,7 +167,7 @@ footer ul.copyright li {
 
 /* button colors */
 a.button {
-  width: 11.25rem;
+  width: 11.5rem;
   height:3.25rem;
   padding-top: 1rem;
   padding-bottom:1rem;
@@ -195,15 +195,17 @@ a.button.buy{
 #visit-mars{
   background-image: url(../img/dss-web-hero.jpg);
   padding-top: 15.625rem;
+  vertical-align: center;
 }
 
-#visit-mars h1 {
-  color: white;
-}
+#call-to-action h1 {
+  margin-top: 0;
+} 
+#call-to-action  {
+  margin-bottom: 1rem;
+} 
 
-#visit-mars p{
-  color: gray;
-}
+
 /*
 #show-title {
   padding-top: 3.5rem; /* 136px-80pxh1 top marg = 56, 56/1600
@@ -483,23 +485,7 @@ a.press.active {
   margin-right: auto;
 }
 
-/*
-#site-navigation a {
-  border-right: 1px solid #dfdfdf;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #000;
-  display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  height: 50px;
-  margin: 4px 0 0 0;
-  padding: 0 0 0 0;
-  
-  width: 235px;
-}  */
+
 #site-navigation a {
   display:inline-block;
   -webkit-box-sizing: border-box;
@@ -510,7 +496,7 @@ a.press.active {
   line-height:4rem;
   font-weight:700;
   height:4rem;
-  width:19%;
+  width:20%;
   margin: 0 0 0 0;
   padding:0;
   text-align:center;
