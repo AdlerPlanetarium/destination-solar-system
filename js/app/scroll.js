@@ -6,7 +6,7 @@ Scroller.prototype.scrollTo = function(event) {
   var target;
   event.preventDefault();
   target = $(event.target).attr('href');
-  return $('html, body').animate({
+  return $(window).animate({
     scrollTop: $(target).offset().top
   }, 600);
 }; 
