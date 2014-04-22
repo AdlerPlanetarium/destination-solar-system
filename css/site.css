@@ -208,7 +208,8 @@ a.button.buy{
 #show-title {
   padding-top: 3.5rem; /* 136px-80pxh1 top marg = 56, 56/1600
 }*/
-/*div {
+/**/
+div {
   border: solid purple;
 }
 
@@ -216,15 +217,18 @@ section {
   border: solid yellow;
 }
 
-trailer {
+#trailer {
    border: solid green;
-}*/
+}
 
 #trailer {
-  width:60%;
+  width:100%;
   margin-left:auto;
   margin-right:auto;
   background-image: url(../img/dss-web-trailer.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 100%;
 }
 
 #sponsors{
@@ -234,6 +238,7 @@ trailer {
   margin-right:auto;  
 }
 
+#press-and-images a.button.press-and-images-link,
 a.button.watch-trailer {
   padding:0;
   margin-left:auto;
@@ -253,10 +258,6 @@ a.button.watch-trailer {
   position: none;
 }
 
-a.button.watch-trailer:hover {
-  background-color: #ff1b00;
-}
-
 /***************************/
 /* explore */
 
@@ -268,9 +269,9 @@ a.button.watch-trailer:hover {
 .planet-image-link img {
   margin-left:auto;
   margin-right:auto;
-  max-width: none;
 }
 #tour-links {
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -329,6 +330,7 @@ a.button.watch-trailer:hover {
 #press-and-images  {
   background-color: black ;
 }
+
 #press-and-images .press-and-images-link {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -357,20 +359,7 @@ a.button.watch-trailer:hover {
 /* Sticky Navy Bar */
 
 /* behavior */
-/*
-.nav-links a {
-  display:inline-block;
-  padding:0;
-  color:white;
-  padding:0;
-  line-height:4rem;
-  text-align:center;
-  height:4rem;
-  margin-left: 0;
-  width:12rem;
-  font-size:1.0625;
-  font-weight:700;
-}*/
+
 a.discover, 
 .nav-links a.discover.active {
   background-color: #ffc400;
