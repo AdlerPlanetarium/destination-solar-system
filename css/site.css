@@ -190,7 +190,6 @@ a.button.buy{
  background-color: black ;
 }
 
-
 #discover-the-show h1,
 #discover-the-show h2, 
 #discover-the-show h3, 
@@ -198,23 +197,12 @@ a.button.buy{
   color: white; 
 }
 
-
 #visit-mars{
   background-image: url(../img/dss-web-hero.jpg);
+  background-size: cover;
   padding-top: 15.625rem;
   vertical-align: center;
   background-repeat: no-repeat;
-}
-
-#visit-mars {
-  border:solid blue;
-}
-
-.row {
-  border:solid orange;
-}
-section {
-  border:solid purple;
 }
 
 #call-to-action h1 {
