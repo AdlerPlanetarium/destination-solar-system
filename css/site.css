@@ -149,6 +149,7 @@ footer ul h2 {
 }
 
 footer ul li a {
+  font-size: 0.625rem; 
   color: white;
 }
 footer ul.copyright {
