@@ -321,6 +321,10 @@ a.button.watch-trailer {
   color:white;
 }
 
+#insta-blurb p {
+  margin-bottom:2rem;
+}
+
 #instafeed li{
   text-align:center;
   vertical-align: center;
