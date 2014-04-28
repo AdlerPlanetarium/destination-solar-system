@@ -63,17 +63,14 @@ hr.black {
 /* site header */
 header {
   color: white;
-  height: 4em;
+  height: 4rem;
+  padding-top: 1rem;
 }
 header a {
   color:white;
 }
 header li {
   color:gray;
-}
-
-#logo {
-  margin: 1rem 0 0 0;
 }
 
 #logo a {
@@ -151,7 +148,7 @@ footer ul li a {
   color: white;
 }
 footer ul.copyright {
-  color:white;
+  color: white;
   height: 3rem;
   line-height:  3rem;
   font-size: 0.625rem; 
@@ -222,7 +219,6 @@ footer ul.copyright li {
   float: none;
   margin-left: 0;
 }
-
 
 /***************************/
 /* sections */
