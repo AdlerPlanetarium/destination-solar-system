@@ -31,11 +31,11 @@ Scroller.prototype.updateNavigation = function() {
   scrollTop = $(window).scrollTop();
   if (scrollTop < headerElement.innerHeight()) {
     navElement.removeClass('fixed');
-    return $('body').css('margin-top', '0');
+    $('body').removeClass('menu-padded');
   } else {
     navElement.addClass("fixed");
+    $('body').addClass('menu-padded');
     
-    $('body').css('margin-top', '3.125rem');
     section = currentSection();
     console.log("section is" + section);
     
@@ -57,13 +57,11 @@ Scroller.prototype.updateNavigation = function() {
   }
 };
 
-startScroller = function(){
-
+startScroller = function() {
   windowWidth = $(window).width();
   scroller = new Scroller(windowWidth);
   
   $(function() {
-    console.log("startScroller");
     //register scroll event
     $(window).scroll(scroller.updateNavigation);
     //register all clicks on nav links of scroll class
