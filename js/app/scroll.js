@@ -26,7 +26,7 @@ currentSection = function() {
 Scroller.prototype.updateNavigation = function() {
   var headerElement, navElement, num, section;
   navElement = $('#site-navigation');
-  headerElement = $('#discover-the-show');
+  headerElement = $('.header-container');
   
   scrollTop = $(window).scrollTop();
   if (scrollTop < headerElement.innerHeight()) {
