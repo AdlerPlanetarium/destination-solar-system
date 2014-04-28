@@ -510,6 +510,11 @@ section{border: solid purple;}*/
     margin-left: 0;
   }
 
+  #site-navigation:before,
+  #site-navigation:after {
+    border-color: transparent !important;
+  }
+
   .fixed {
     position: relative !important;
   }
