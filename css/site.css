@@ -211,13 +211,22 @@ a.button.buy{
   margin-top: 0;
 } 
 #call-to-action  {
-  margin-bottom: 10rem;
-
+  margin-bottom: 10rem; 
 } 
+
+#show-title {
+  
+}
+
+#trailer {
+
+}
 
 #trailer {
   width:100%;
-  margin-top:3rem;
+  height:100%;
+  margin-top:0rem;
+  padding-top: 3rem;
   margin-left:auto;
   margin-right:auto;
   background-image: url(../img/dss-web-trailer.jpg) ;
