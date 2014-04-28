@@ -39,10 +39,6 @@ body {
   overflow-x: hidden; 
 }
 
-body, section {
-  /*max-width:1200px;*/
-}
-
 hr {
   padding: 0;
   margin: 0 auto;
@@ -259,10 +255,6 @@ footer ul.copyright li {
   text-align: center;
 }
 
-#show-title {
-  
-}
-
 #trailer {
   height:100%;
   margin-top:0rem;
@@ -287,47 +279,25 @@ footer ul.copyright li {
 
 /***************************/
 /* explore */
-
-.planet-image-link {
-  max-width:6.25rem;
-  margin-left:auto;
-  margin-right:auto;
-}
-.planet-image-link img {
-  margin-left:auto;
-  margin-right:auto;
-}
-#tour-links {
-  margin-top: 1rem;
-  margin-bottom: 6rem;
-}
-
-#tour-links .columns {
-  text-align:center;
+#explore-the-stops {
+  padding-bottom: 6rem;
 }
 
 .planet-link {
-  margin-left: auto;
-  margin-right: auto;
-  color:black;
-  margin:auto;
-  max-width: 100px;
-  width: 222px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-align:center;
-  text-transform:uppercase;
+  text-align: center;
 }
 
-.planet-link:visited {
-  color:black;
+.planet-link a {
+  color: black;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.tour-caption {
-  margin-top: .5rem;
-}
-.tour-caption,.tour-image {
-  margin:0;
-  padding:0;
+
+.planet-link img {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 6.25rem;
 }
 
 /* your-spacecation */
@@ -430,11 +400,11 @@ a.press.active {
 
 #site-navigation.pos1:after,
 #site-navigation.pos1:before {
-  left: 10%;
+  left: 22.5%;
 }
 #site-navigation.pos2:after,
 #site-navigation.pos2:before {
-  left: 30%;
+  left: 36.5%;
 }
 #site-navigation.pos3:after,
 #site-navigation.pos3:before {
@@ -442,11 +412,11 @@ a.press.active {
 }
 #site-navigation.pos4:after,
 #site-navigation.pos4:before {
-  left: 70%;
+  left: 64%;
 }
 #site-navigation.pos5:after,
 #site-navigation.pos5:before {
-  left: 90%;
+  left: 78%;
 }
 
 #site-navigation:before {
@@ -491,27 +461,17 @@ a.press.active {
   border-right: none;
 }
 
-#site-navigation {
-  width:60%;
-  margin-left:auto; 
-  margin-right:auto;
-  text-align:center;
-  background-color: transparent;
-  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 20;
-}
-
 .nav-links {
   width:100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+#site-navigation {
+  position: relative;
+}
 
 #site-navigation a {
-  display:inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -520,13 +480,12 @@ a.press.active {
   line-height:4rem;
   font-weight:700;
   height:4rem;
-  width:20%;
   margin: 0 0 0 0;
   padding:0;
   text-align:center;
 }
 #site-navigation.fixed {
-  position: fixed !important;
+  position: fixed;
   text-align:center;
   top:0;
   left: 0; 
@@ -537,3 +496,33 @@ a.press.active {
 /*
 div{border: solid blue;}
 section{border: solid purple;}*/
+
+.menu-padded {
+  margin-top: 3.125rem;
+}
+
+.button-area {
+  text-align: right;
+}
+
+@media only screen and (max-width: 64rem) {
+  #space-express-logo {
+    margin-left: 0;
+  }
+
+  .fixed {
+    position: relative !important;
+  }
+
+  .menu-padded {
+    margin-top: 0;
+  }
+
+  .button-area {
+    text-align: center;
+  }
+
+  .planet-link {
+    margin: 1rem 0;
+  }
+}
