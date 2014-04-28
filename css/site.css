@@ -13,13 +13,13 @@ p {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-family: Lato;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing:  0.1875 
   text-transform: uppercase;
-  margin-bottom: 25px;
-  margin-top: 80px;
+  margin-bottom: 1.5625rem;
+  margin-top: 5rem;
 }
 
 .fullWidth {
