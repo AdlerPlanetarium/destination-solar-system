@@ -325,6 +325,10 @@ a.button.watch-trailer {
   margin-bottom:2rem;
 }
 
+#instafeed-container {
+  padding-bottom:2.5rem;
+}
+
 #instafeed li{
   text-align:center;
   vertical-align: center;
