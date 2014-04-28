@@ -174,7 +174,6 @@ footer ul.copyright li {
   font-weight: 900;
   height: 3.3rem;
   line-height: 0.9rem;
-  margin: 2rem 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
@@ -182,6 +181,10 @@ footer ul.copyright li {
 
 .button:hover {
   background-color: inherit
+}
+
+.button.spacer {
+  margin: 2rem 0;
 }
 
 .button.orange {
@@ -366,41 +369,6 @@ footer ul.copyright li {
   font-size: .75rem;
   color:white;
 }
-/*
-#press-and-images .press-and-images-link {
-  
-  margin-bottom: 2rem;
-  padding-bottom:1rem;
-  margin-left:auto;
-  margin-right:auto;
-  width: 40.6875rem;
-  text-align:center;
-  vertical-align:center;
-  background-color: red ; 
-}
-*/
-
-
-#press-and-images a.button.press-and-images-link {
-  padding:0;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: 3rem;
-  display: block;
-  border-radius:4px;
-  border: 2px solid white;
-  background-color: black;
-  color:white;
-  font-weight: 900;
-  font-size:1rem;
-  padding:0;
-  line-height:3.75rem;/*60px*/
-  height:3.75rem;
-  width:11.75rem; /*220px */
-  position: none;
-}
-
-
 
 /* visit-the-adler */
 #visit-the-adler {
