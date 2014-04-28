@@ -47,12 +47,13 @@ body, section {
 }
 
 hr {
-  padding:0px;
-  margin:auto;
+  padding: 0;
+  margin: 0 auto;
   margin-bottom: 1.9rem;
   height:.25rem;
   width: 3rem;
 }
+
 hr.white {
   background-color: white;
 }
@@ -64,7 +65,6 @@ hr.black {
 /****************/
 /* site header */
 header {
-  background-color: black; 
   color: white;
   height: 4em;
 }
@@ -76,7 +76,7 @@ header li {
 }
 
 #logo {
-  margin :0;
+  margin: 1rem 0 0 0;
 }
 
 #logo a {
@@ -168,16 +168,21 @@ footer ul.copyright li {
 }
 
 /* button colors */
-a.button {
-  width: 11.5rem;
-  height:3.25rem;
+.button {
+  background-color: transparent;
+  border: 0.15rem solid #fff;
+  width: 12rem;
+  height: 3.3rem;
+  line-height: 0.9rem;
   padding-top: 1rem;
-  padding-bottom:1rem;
-  line-height:1.25rem;
+  padding-bottom: 1rem;
 }
 
+.button:hover {
+  background-color: inherit
+}
 
-a.button.buy{
+.button.orange {
   background-color: #ff1b00;
 }
 
@@ -198,19 +203,27 @@ a.button.buy{
 }
 
 #visit-mars{
-  background-image: url(../img/dss-web-hero.jpg);
-  background-size: cover;
   padding-top: 15.625rem;
   vertical-align: center;
   background-repeat: no-repeat;
 }
 
+.header-container {
+  background-image: url(../img/dss-web-hero.jpg);
+  background-size: cover;
+}
+
+#call-to-action {
+  color: #fff;
+  margin-bottom: 10rem; 
+  text-align: center;
+} 
+
 #call-to-action h1 {
   margin-top: 0;
-} 
-#call-to-action  {
-  margin-bottom: 10rem; 
-} 
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
 #show-title {
   
@@ -239,37 +252,6 @@ a.button.buy{
   display:block;
   margin-left:auto;
   margin-right:auto;  
-}
-
-#call-to-action h1 {
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: 0;
-  margin-bottom: 0;
-}
-#call-to-action p {
-  color:gray;
-}
-
-
-
-a.button.watch-trailer {
-  padding:0;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: 3rem;
-  display: block;
-  border-radius:4px;
-  border: 2px solid white;
-  background-color: black;
-  color:white;
-  font-weight: 900;
-  font-size:1rem;
-  padding:0;
-  line-height:3.75rem;/*60px*/
-  height:3.75rem;
-  width:13.75rem; /*220px */
-  position: none;
 }
 
 /***************************/
