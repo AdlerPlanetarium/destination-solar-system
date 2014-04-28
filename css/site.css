@@ -90,6 +90,7 @@ header li {
   max-width: none;
 }
 
+
 header ul.hours  {
   line-height: 1.3125rem;
 }
@@ -183,13 +184,12 @@ a.button.buy{
 /***************************/
 /* sections */
 /* discover*/
-#discover-the-show, #header {  
-  background-color: black;
+
+
+#discover-the-show {
+ background-color: black ;
 }
 
-#discover-the-show{
-  margin-bottom: 2.5rem;
-}
 
 #discover-the-show h1,
 #discover-the-show h2, 
@@ -204,7 +204,17 @@ a.button.buy{
   padding-top: 15.625rem;
   vertical-align: center;
   background-repeat: no-repeat;
+}
 
+#visit-mars {
+  border:solid blue;
+}
+
+.row {
+  border:solid orange;
+}
+section {
+  border:solid purple;
 }
 
 #call-to-action h1 {
