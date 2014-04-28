@@ -400,11 +400,11 @@ a.press.active {
 
 #site-navigation.pos1:after,
 #site-navigation.pos1:before {
-  left: 22.5%;
+  left: 27%;
 }
 #site-navigation.pos2:after,
 #site-navigation.pos2:before {
-  left: 36.5%;
+  left: 38.5%;
 }
 #site-navigation.pos3:after,
 #site-navigation.pos3:before {
@@ -412,11 +412,11 @@ a.press.active {
 }
 #site-navigation.pos4:after,
 #site-navigation.pos4:before {
-  left: 64%;
+  left: 61.5%;
 }
 #site-navigation.pos5:after,
 #site-navigation.pos5:before {
-  left: 78%;
+  left: 73%;
 }
 
 #site-navigation:before {
