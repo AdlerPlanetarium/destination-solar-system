@@ -5,14 +5,11 @@
 */
 
 /* general */
-
-
 p {
-  text-align:justify;
   font-weight:200;
   font-size:1.125rem;
   line-height: 1.75rem;
-
+  text-align: left;
 }
 
 h1 {
