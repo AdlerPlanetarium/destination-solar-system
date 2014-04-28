@@ -347,6 +347,14 @@ a.button.watch-trailer {
   background-color: black ;
 }
 
+#press-and-images-row {
+  padding-top: 3rem;
+}
+
+#press-and-images-row p{
+  font-size: .75rem;
+  color:white;
+}
 /*
 #press-and-images .press-and-images-link {
   
@@ -364,7 +372,6 @@ a.button.watch-trailer {
 
 #press-and-images a.button.press-and-images-link {
   padding:0;
-  margin-top: 2rem;
   margin-left:auto;
   margin-right:auto;
   margin-bottom: 3rem;
