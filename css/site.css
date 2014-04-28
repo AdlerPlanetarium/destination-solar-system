@@ -342,6 +342,7 @@ a.button.watch-trailer {
 
 /* press-and-images */
 #press-and-images  {
+  padding-bottom: 3rem;
   background-color: black ;
 }
 
@@ -379,6 +380,8 @@ a.button.watch-trailer {
   width:11.75rem; /*220px */
   position: none;
 }
+
+
 
 /* visit-the-adler */
 #visit-the-adler {
