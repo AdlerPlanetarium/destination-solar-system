@@ -4,7 +4,7 @@ function populateInstagram() {
           get: 'tagged',
           tagName: 'spacecation',
           limit: 8, 
-          template: '<li><a class="instagram-image" href="{{link}}"><img class="instagram-image" src="{{image}}"/></a></li>'
+          template: '<li><a class="instagram-image" href="{{link}}"><img class="instagram-image" src="http:{{image}}"/></a></li>'
         });
   feed.run();
 }
