@@ -34,8 +34,8 @@ h1 {
 }
 
 body {
-  background-color: white; 
-  color: black;
+  background-color: black; 
+  color: white;
   overflow-x: hidden; 
 }
 
@@ -120,24 +120,23 @@ header ul.hours .shop {
 footer {
   background-color: black;
 }
-footer nav {
+
+
+#footer-nav-bar {
   padding: 2rem 0 4rem 0;
-  font-size: 0.625rem;  /* 10px circa*/
+  font-size: 0.625rem; 
 }
 
-footer nav h2 {
+#footer-nav-bar img {
+  margin-bottom: 2rem;
+}
+footer  h2 {
   margin: 0 0 0.3125rem 0;
   font-size: .75rem;
   font-weight: 700;
-  /*color:white;*/
-}
+  color: white;
+} 
 
-footer ul h2 {
-  color: white;
-}
-footer ul h2 {
-  color: white;
-}
 
 footer ul li a {
   font-size: 0.625rem; 
@@ -270,7 +269,7 @@ footer ul.copyright li {
   margin: 0 0 2.5rem 2.5rem;
 }
 
-#sponsors{
+#sponsors .columns{
   margin-top:3rem;
   display:block;
   margin-left:auto;
@@ -280,6 +279,8 @@ footer ul.copyright li {
 /***************************/
 /* explore */
 #explore-the-stops {
+  background-color:white;
+  color:black;
   padding-bottom: 6rem;
 }
 
@@ -348,6 +349,8 @@ footer ul.copyright li {
 
 /* visit-the-adler */
 #visit-the-adler {
+  background-color:black;
+  color:white;
   margin-top: 4rem;
   margin-bottom: 2.5rem;
 }
@@ -506,6 +509,11 @@ section{border: solid purple;}*/
 }
 
 @media only screen and (max-width: 64rem) {
+  /*
+  [class*="column"] + [class*="column"]:last-child {
+    float: right; 
+  }*/
+
   #space-express-logo {
     margin-left: 0;
   }
@@ -530,4 +538,40 @@ section{border: solid purple;}*/
   .planet-link {
     margin: 1rem 0;
   }
+
+  #sponsors .sponsors-image-container{
+    margin-top:3rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  } 
+
+  #sponsors .sponsors-image-container img {
+    max-width: 100%;
+  }
+
+  footer {
+    height: inherit;
+  }
+
+  footer #footer-nav-bar {
+    padding: 1rem 0 1rem 0;
+  }
+
+  #copyright-row {
+    height:100%;
+  }
+
+  footer ul.copyright {
+    margin:0;
+    height: 3rem;
+    line-height:  3rem;
+    font-size: 0.625rem; 
+    list-style-type: none; 
+    text-align: left;
+  }
+
+  footer ul.copyright li {
+    display: block
+  }
+
 }
