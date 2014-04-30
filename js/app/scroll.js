@@ -25,15 +25,15 @@ currentSection = function() {
 
 Scroller.prototype.updateNavigation = function() {
   var headerElement, navElement, num, section;
-  navElement = $('#site-navigation');
+  navElement = $('.nav-links');
   headerElement = $('.header-container');
   
   scrollTop = $(window).scrollTop();
   if (scrollTop < headerElement.innerHeight()) {
-    navElement.removeClass('fixed');
+    $('#site-navigation').removeClass('fixed');
     $('body').removeClass('menu-padded');
   } else {
-    navElement.addClass("fixed");
+    $('#site-navigation').addClass("fixed");
     $('body').addClass('menu-padded');
     
     section = currentSection();
