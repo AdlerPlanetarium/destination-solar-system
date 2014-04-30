@@ -231,7 +231,7 @@ footer ul.copyright li {
   color: white; 
 }
 
-#visit-mars{
+#visit-topbar{
   padding-top: 15.625rem;
   vertical-align: center;
   background-repeat: no-repeat;
@@ -333,6 +333,19 @@ footer ul.copyright li {
   width:100%;
 }
 
+
+
+/* visit-the-adler */
+#visit-the-adler {
+  background-color:white;
+  color:black;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+#where-is-adler{
+  font-size: .75rem;
+}
 /* press-and-images */
 #press-and-images  {
   padding-bottom: 3rem;
@@ -348,12 +361,8 @@ footer ul.copyright li {
   color:white;
 }
 
-/* visit-the-adler */
-#visit-the-adler {
-  background-color:white;
-  color:black;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+#credit {
+  line-height: 1.125rem;
 }
 
 
