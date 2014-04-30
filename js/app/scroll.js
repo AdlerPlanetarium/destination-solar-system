@@ -37,11 +37,9 @@ Scroller.prototype.updateNavigation = function() {
     $('body').addClass('menu-padded');
     
     section = currentSection();
-    console.log("section is" + section);
     
     num = navElement.find("a[href=#" + section + "]").index();
-    console.log ("a[href=#" + section + "]");
-    console.log(num);
+    
     
     if (num >= 0) {
       

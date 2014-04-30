@@ -6,6 +6,7 @@
     <title>Destination Solar System</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="js/app/instafeed.min.js"></script>
@@ -177,6 +178,12 @@
           <a href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=PP" class="button radius orange">Purchase Tickets</a>
         </div>
       </div>
+      <div class="row fullWidth">
+        <div class="small-10 small-offset-1 end columns">
+          <div id='map'>
+            <iframe frameborder="0" style="border:0"></iframe>
+          </div>
+      </div>
     </section>
 
     <section id="press-and-images">
@@ -279,6 +286,7 @@
     </footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/app/leaflet-src.js"></script>
     <script type="text/javascript" src="js/app/scroll.js"></script>
     <script>
       $(document).foundation();
@@ -286,6 +294,8 @@
       populateInstagram();
       //bind window scrolling and navigation links to controler
       startScroller();
+      //load the Leaflet OSM map
+      loadMap();
     </script>
 
   </body>
