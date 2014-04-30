@@ -395,7 +395,7 @@ a.press.active {
   content: " ";
   height: 0;
   width: 0;
-  left: 10%;
+  left: 17%;
   position: absolute;
   pointer-events: none;
   -webkit-transition: left 0.1s ease-in-out;
