@@ -274,14 +274,6 @@ footer ul.copyright li {
   margin: 0 0 2.5rem 2.5rem;
 }
 
-
-#sponsors .columns{
-  margin-top:3rem;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;  
-}
-
 /***************************/
 /* explore */
 #explore-the-stops {
@@ -352,6 +344,13 @@ footer ul.copyright li {
   font-size: .75rem;
 }
 /* press-and-images */
+#sponsors .columns{
+  margin-top:3rem;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;  
+}
+
 #press-and-images  {
   padding-bottom: 3rem;
   background-color: black ;
@@ -371,8 +370,19 @@ footer ul.copyright li {
 }
 
 #press-and-images .sponsors-image-container {
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
+
+#press-and-images #presented-by {
+ padding-right:0;
+ margin-right: 0rem;   
+}
+
+#press-and-images #bmo {
+ margin-left:2rem; 
+ margin-right:6rem; 
+}
+
 
 #press-and-images .sponsors-image-container img {
   max-width: none;
