@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'pry'
 require 'aws-sdk'
 AWS.config access_key_id: 'AKIAIQZ2TDA5U6GEFWYA', secret_access_key: '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'
 
