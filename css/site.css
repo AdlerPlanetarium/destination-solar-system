@@ -341,6 +341,7 @@ footer ul.copyright li {
 }
 
 #where-is-adler{
+  line-height: 1rem;
   font-size: .75rem;
 }
 /* press-and-images */
