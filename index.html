@@ -38,7 +38,7 @@
               <div id="right-top" class="right">
                 <ul class="inline-list hours">
                   <li>
-                    <a href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=AAP" target="_blank">Purchase Tickets</a>
+                    <a id="dss-purchase-1" href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=AAP" target="_blank">Purchase Tickets</a>
                   </li>
                   <li>
                     <span>MUSEUM 9:30 am - 4 pm</span>
@@ -64,7 +64,7 @@
               <p>
                 Explore the best of the Solar System in one unforgettable 30-minute tour. Destination Solar System offers a great way to discover new places or see a new side of a familiar destination. Tours launch daily from the Adler Planetarium’s Grainger Sky Theater.
               </p>
-              <a href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=AAP" id="call-purchase" target="_blank" class="button radius spacer">Purchase Tickets</a>
+              <a id="dss-purchase-2" href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=AAP" id="call-purchase" target="_blank" class="button radius spacer">Purchase Tickets</a>
             </div>  
           </div> 
         </div>
@@ -91,7 +91,7 @@
                 <p>
                   Welcome to Space Express, the first tour company in deep space. For an out-of-this-world experience, jump aboard our most popular tour, Destination Solar System. From sizzling solar flares on the Sun to liquid methane lakes on Saturn’s moon, Titan, tour the hottest spots and coldest, stormiest and most spectacular sights in the Solar System. You’ll go far with Space Express.
                 </p>
-                <a class="button radius arrow spacer" href="https://www.youtube.com/watch?v=z787Sch3NcA&list=TLIeK-Ic-rfdq9elGtZdl4NY2uLDOzYxSe" target="_blank"> 
+                <a id="watch-trailer" class="button radius arrow spacer" href="https://www.youtube.com/watch?v=z787Sch3NcA&list=TLIeK-Ic-rfdq9elGtZdl4NY2uLDOzYxSe" target="_blank">
                   Watch Trailer
                 </a>
               </div>
@@ -177,7 +177,7 @@
           </p>
         </div>
         <div class="small-12 large-4 end columns button-area">
-          <a href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=AAP" target="_blank" class="button radius orange">Purchase Tickets</a>
+          <a id="dss-purchase-3" href="https://tickets.adlerplanetarium.org/WebStore/shop/ViewItems.aspx?CG=PGA&C=AAP" target="_blank" class="button radius orange">Purchase Tickets</a>
         </div>
       </div>
       <div class="row fullWidth">
@@ -190,9 +190,6 @@
 
     <section id="press-and-images">
       <div id="sponsors" class="row fullWidth" >
-        <!--<div class="large-5 large-offset-1   small-11 small-offset-1   columns sponsors-image-container">
-          <img src='img/dss-sponsors-left-half.png' />
-        </div>-->
         <div id="presented-by" class="large-1 large-offset-1 small-11 small-offset-1 columns sponsors-image-container">
           <img src='img/dss-sponsors-presented.png' />
          </div>
@@ -321,6 +318,8 @@
       startScroller();
       //load the Leaflet OSM map
       loadMap();
+      // load the purchase button listeners
+      addEventListeners();
     </script>
   </body>
 </html>

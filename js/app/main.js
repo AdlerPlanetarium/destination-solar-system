@@ -28,3 +28,25 @@ function loadMap() {
 
   window.marker = L.marker([41.866317,-87.606761], {icon: icon}).addTo(map)
 }
+
+
+function addEventListeners(){
+  addGoogleEventListener("#watch-trailer",  "WatchTrailer");
+  addGoogleEventListener("#dss-purchase-1", "Purchase");
+  addGoogleEventListener("#dss-purchase-2", "Purchase");
+  addGoogleEventListener("#dss-purchase-3", "Purchase");
+}
+
+// adds an Google analytics event listener to the DOM element
+// accepts an elementID
+// relies on jQuery and Google Analytics objects instantiation
+function addGoogleEventListener(elementID, category) {
+  $(elementID).on('click', function() {
+    eventFields = {
+       'eventCategory': category,
+       'eventAction': 'click',
+       'eventLabel': elementID.replace("#","")
+      }
+    ga('send', 'event', eventFields);
+  });
+}
