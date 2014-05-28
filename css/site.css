@@ -4,9 +4,6 @@
  0.75rem;  12px circa 
 */
 
-div {
-  border-style: solid purple;
-}
 
 /* general */
 p {
@@ -372,7 +369,7 @@ footer ul.copyright li {
   color:white;
 }
 
-#credit {
+.press-para {
   line-height: 1.125rem;
 }
 
@@ -391,10 +388,9 @@ footer ul.copyright li {
 }
 
 #press-and-images #orbitz {
-  margin-left:-1.2rem;
   margin-right:0rem;
-  margin-top:.25rem;
-  padding-left:0rem; 
+  margin-top:.40rem;
+  padding-left:3rem; 
 }
 
 #promo-partner-col {
@@ -403,8 +399,10 @@ footer ul.copyright li {
 }
 
 #press-and-images #orbitz img {
-  width: 50%;
+  width: 80px;
+  
 }
+
 
 #press-and-images .sponsors-image-container img {
   max-width: none;
@@ -542,11 +540,20 @@ a.press.active {
 @media only screen and (max-width: 1024px) ,  handheld and (max-width: 1024px) { 
   [class*="column"] + [class*="column"]:last-child {
     float: right; 
-  }*/
-
-  #orbitz img {
-    width:50%;
   }
+
+  #press-and-images #orbitz {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #press-and-images #comed {
+    margin-right:0;
+  }
+  
+  
+ 
+
   #space-express-logo {
     margin-left: 0;
   }
@@ -603,6 +610,3 @@ a.press.active {
 
 }
 
-#press-and-images {
-  color:white;
-}
