@@ -31,7 +31,6 @@ function loadMap() {
 
 
 function addEventListeners(){
-  addGoogleEventListener("#watch-trailer",  "WatchTrailer");
   addGoogleEventListener("#dss-purchase-1", "Purchase");
   addGoogleEventListener("#dss-purchase-2", "Purchase");
   addGoogleEventListener("#dss-purchase-3", "Purchase");
