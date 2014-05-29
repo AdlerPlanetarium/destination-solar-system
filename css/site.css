@@ -396,6 +396,10 @@ footer ul.copyright li {
   max-width: none;
 }
 
+#press-kit-button {
+  margin-right: 2.6rem;
+}
+
 /********************/
 /* Sticky Navy Bar */
 
@@ -564,6 +568,7 @@ a.press.active {
     text-align: center;
   }
 
+  
   .planet-link {
     margin: 1rem 0;
   }
