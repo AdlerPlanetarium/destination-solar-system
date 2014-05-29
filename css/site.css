@@ -542,6 +542,10 @@ a.press.active {
   #press-and-images #comed {
     margin-right:0;
   }
+
+  #press-and-images #presented-by {
+    margin-left:2rem;
+  }
   
   #space-express-logo {
     margin-left: 0;
@@ -568,7 +572,7 @@ a.press.active {
     text-align: center;
   }
 
-  
+
   .planet-link {
     margin: 1rem 0;
   }
