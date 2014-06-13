@@ -10,35 +10,29 @@ function populateInstagram() {
 }
 
 function loadMap() {
-  
   var baseLayer, icon, map, windowHeight;
- 
   map = new L.Map('map', {
     maxZoom: 19,
     scrollWheelZoom: false,
-    zoomControl: false
+    zoomControl: true
   });
- 
   baseLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18
+    maxZoom: 18
   });
- 
   map.addLayer(baseLayer);
   map.setView(new L.LatLng(41.866333, -87.606783), 15);
-  
-  var icon = L.icon({
-                iconSize: new L.Point(25, 41),
-                iconAnchor: new L.Point(12, 41),
-                popupAnchor: new L.Point(1, -34),
-
-                shadowSize: new L.Point(41, 41),
-                iconUrl: 'img/marker-icon.png',
-                iconRetinaUrl: 'img/marker-icon@2x.png',
-                shadowUrl: 'img/marker-shadow.png'
-            });
-
-
-  window.marker = L.marker([41.866317,-87.606761], {icon: icon}).addTo(map)
+  icon = L.icon({
+    iconSize: new L.Point(25, 41),
+    iconAnchor: new L.Point(12, 41),
+    popupAnchor: new L.Point(1, -34),
+    shadowSize: new L.Point(41, 41),
+    iconUrl: 'img/marker-icon.png',
+    iconRetinaUrl: 'img/marker-icon@2x.png',
+    shadowUrl: 'img/marker-shadow.png'
+  });
+  L.marker([41.866333, -87.606783], {
+    icon: icon
+  }).addTo(map);
 }
 
 
