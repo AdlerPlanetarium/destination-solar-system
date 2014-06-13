@@ -16,7 +16,7 @@ js    = Dir.glob("js/**/*.*")
 img = Dir.glob("img/**/*.*")
 tour = Dir.glob("tour/**/*.*")
 
-to_upload = ["index.html"] + ["coming-soon.html"] + css + js + img + tour
+to_upload = ["index.html"] + css + js + img + tour
 
 total = to_upload.count
 
