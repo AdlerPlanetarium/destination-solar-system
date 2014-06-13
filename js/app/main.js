@@ -10,10 +10,22 @@ function populateInstagram() {
 }
 
 function loadMap() {
-  var map = L.map('map', {scrollWheelZoom: false}).setView([41.866317,-87.606761], 13);
-
-  L.tileLayer('http://{s}.tile.cloudmade.com/703a104d15d44e2885f6cedeaaec6d30/22677/256/{z}/{x}/{y}.png').addTo(map);
-
+  
+  var baseLayer, icon, map, windowHeight;
+ 
+  map = new L.Map('map', {
+    maxZoom: 19,
+    scrollWheelZoom: false,
+    zoomControl: false
+  });
+ 
+  baseLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18
+  });
+ 
+  map.addLayer(baseLayer);
+  map.setView(new L.LatLng(41.866333, -87.606783), 15);
+  
   var icon = L.icon({
                 iconSize: new L.Point(25, 41),
                 iconAnchor: new L.Point(12, 41),
