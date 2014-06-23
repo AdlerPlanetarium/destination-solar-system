@@ -10,21 +10,48 @@ function populateInstagram() {
 }
 
 function loadMap() {
-  var map = L.map('map', {scrollWheelZoom: false}).setView([41.866317,-87.606761], 13);
+  var baseLayer, icon, map, windowHeight;
+  map = new L.Map('map', {
+    maxZoom: 19,
+    scrollWheelZoom: false,
+    zoomControl: true
+  });
+  baseLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18
+  });
+  map.addLayer(baseLayer);
+  map.setView(new L.LatLng(41.866333, -87.606783), 15);
+  icon = L.icon({
+    iconSize: new L.Point(25, 41),
+    iconAnchor: new L.Point(12, 41),
+    popupAnchor: new L.Point(1, -34),
+    shadowSize: new L.Point(41, 41),
+    iconUrl: 'img/marker-icon.png',
+    iconRetinaUrl: 'img/marker-icon@2x.png',
+    shadowUrl: 'img/marker-shadow.png'
+  });
+  L.marker([41.866333, -87.606783], {
+    icon: icon
+  }).addTo(map);
+}
 
-  L.tileLayer('http://{s}.tile.cloudmade.com/703a104d15d44e2885f6cedeaaec6d30/22677/256/{z}/{x}/{y}.png').addTo(map);
 
-  var icon = L.icon({
-                iconSize: new L.Point(25, 41),
-                iconAnchor: new L.Point(12, 41),
-                popupAnchor: new L.Point(1, -34),
+function addEventListeners(){
+  addGoogleEventListener("#dss-purchase-1", "Purchase");
+  addGoogleEventListener("#dss-purchase-2", "Purchase");
+  addGoogleEventListener("#dss-purchase-3", "Purchase");
+}
 
-                shadowSize: new L.Point(41, 41),
-                iconUrl: 'img/marker-icon.png',
-                iconRetinaUrl: 'img/marker-icon@2x.png',
-                shadowUrl: 'img/marker-shadow.png'
-            });
-
-
-  window.marker = L.marker([41.866317,-87.606761], {icon: icon}).addTo(map)
+// adds an Google analytics event listener to the DOM element
+// accepts an elementID
+// relies on jQuery and Google Analytics objects instantiation
+function addGoogleEventListener(elementID, category) {
+  $(elementID).on('click', function() {
+    eventFields = {
+       'eventCategory': category,
+       'eventAction': 'click',
+       'eventLabel': elementID.replace("#","")
+      }
+    ga('send', 'event', eventFields);
+  });
 }
