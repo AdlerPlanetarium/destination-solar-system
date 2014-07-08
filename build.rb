@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'aws-sdk'
-AWS.config access_key_id: ENV['ADLER_S3_ACCESS_ID'], secret_access_key: ENV['ADLER_S3_SECRET_KEY']
+
+AWS.config access_key_id: ENV['ADLER_AWS_ACCESS_KEY_ID'], secret_access_key: ENV['ADLER_AWS_SECRET_ACCESS_KEY']
 s3 = AWS::S3.new
 staging_bucket = 'test-dss.adlerplanetarium.org'
 prod_bucket = 'destinationsolarsystem.adlerplanetarium.org'
